@@ -11,8 +11,8 @@ using backEnd.Context;
 namespace backEnd.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220520143625_initial")]
-    partial class initial
+    [Migration("20220523011619_initial2")]
+    partial class initial2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -113,6 +113,10 @@ namespace backEnd.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("fecha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("precio")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -147,6 +151,10 @@ namespace backEnd.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("empleado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("fecha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

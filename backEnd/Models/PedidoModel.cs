@@ -17,5 +17,7 @@ namespace backEnd.Models
         public string cantidad { get; set; }
         [Required]
         public string precio { get; set; }
+        [Required]
+        public string fecha { get; set; }
     }
 }
