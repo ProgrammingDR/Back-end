@@ -13,5 +13,6 @@ namespace backEnd.Context
         public DbSet<EmpleadoModel> Empleado { get; set; }
         public DbSet<PedidoModel> Pedido { get; set; }
         public DbSet<VentaModel> Venta { get; set; }
+        public DbSet<LoginModel> Login { get; set; }
     }
 }
